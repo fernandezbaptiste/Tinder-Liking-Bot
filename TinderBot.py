@@ -4,11 +4,19 @@ from time import sleep
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from random import randint
+import json
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://www.tinder.com')
 print("Opened tinder")
 sleep(1)
+
+# Import your credentials
+with open('creds.json') as json_file:
+    data = json.load(json_file)
+    print(data)
+email = data['email']
+password = data['pass']
 
 main_page = driver.current_window_handle
 sleep(1)
