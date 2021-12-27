@@ -54,7 +54,7 @@ email_accept.click()
 sleep(1)
 
 password = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")
-password.send_keys("jorkimien69")
+password.send_keys(password)
 sleep(1)
 
 password_accept = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/span/span")
